@@ -18,8 +18,18 @@ class Stadium:
 
 # Will somehow need the stadium objects for other tables' generation (consistency)
 def gen_stadiums() -> [Stadium]:
-   pass
-
+   # Somehow we have 100 stadiums to use
+   num_stadiums = 100
+   stadiums = []
+   for i in range(num_stadiums):
+      stadium_id = i + 1
+      stadium_name = (fake.unique.company() + " " + fake.random_element(["Arena", "Stadium", "Field", "Park"])).replace(",", "")
+      # Somehow this rounds to the nearest 10th
+      stadium_cap = round(random.randint(5000, 950000), -1)
+      stadium_loc = fake.unique.city()
+      stadiums.append([stadium_id, stadium_name, stadium_cap, stadium_loc])
+   return [Stadium(*stadium) for stadium in stadiums]
+   
 # Write to the csv file
 def write_stadiums(stadiums: [Stadium]):
    with open(path, "w+") as f:
