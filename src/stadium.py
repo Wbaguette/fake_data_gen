@@ -16,7 +16,6 @@ class Stadium:
    def __str__(self):
       return f"{self.stadium_id},{self.stadium_name},{self.stadium_capacity},{self.stadium_location}"
 
-# Will somehow need the stadium objects for other tables' generation (consistency)
 def gen_stadiums() -> [Stadium]:
    # Somehow we have 100 stadiums to use
    num_stadiums = 100
