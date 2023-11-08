@@ -34,8 +34,7 @@ def gen_teams() -> [Team]:
       team_ties = games_played - team_wins - team_losses
       
       win_percentage = round((team_wins + (0.5 * team_ties)) / games_played, 6)
-      team = [team_id, team_name, team_wins, team_losses, team_ties, win_percentage, team_val]
-      teams.append(team)
+      teams.append([team_id, team_name, team_wins, team_losses, team_ties, win_percentage, team_val])
    teams.sort(key=lambda x: x[5], reverse=True)
    teams = [team[:5] + [i + 1] + team[6:] for i, team in enumerate(teams)]
    teams.sort(key=lambda x: x[0])
