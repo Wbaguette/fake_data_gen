@@ -1,4 +1,3 @@
-
 CREATE TABLE `Team` (
   `idTeam` INT NOT NULL,
   `name`VARCHAR(45) NULL,
