@@ -1,6 +1,7 @@
 # TODO
 
-Player generation using team object list
+
+
 
 .. everything else 😭
 
@@ -9,3 +10,5 @@ Player generation using team object list
 
 Stadium generation
 Team generation
+Player generation using team object list
+Statistics generation using player object list
