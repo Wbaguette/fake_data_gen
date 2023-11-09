@@ -4,6 +4,7 @@ import player
 import stats
 import sponsor
 import staff
+import contract
 
 from faker import Faker
 fake = Faker()
@@ -21,7 +22,9 @@ def main():
    sponsors = sponsor.gen_sponsors(teams)
    # for sp in sponsors: print(sp)
    staffs = staff.gen_staff(stadiums)
-   for sta in staffs: print(sta)
+   # for sta in staffs: print(sta)
+   contracts = contract.gen_contracts(players)
+   for co in contracts: print(co)
    
    
    
