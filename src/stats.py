@@ -19,7 +19,6 @@ class Statistics:
       return f"{self.player_id},{self.goals},{self.blocks},{self.yellow_cards},{self.red_cards}"
 
 def gen_statistics(players: [Player]) -> [Statistics]:
-   stats = []
    for player in players:
       player_id = player.player_id
       if player.player_pos == "ST": 
@@ -36,9 +35,7 @@ def gen_statistics(players: [Player]) -> [Statistics]:
          blocks = random.randint(5, 20)
       yellow_cards = random.randint(0, 10)
       red_cards = random.randint(0, 2)
-      stats.append(Statistics(player_id, goals, blocks, yellow_cards, red_cards))
-      
-   return stats
+      yield Statistics(player_id, goals, blocks, yellow_cards, red_cards)
 
 # Write to the csv file
 def write_statistics(statistics: [Statistics]):
