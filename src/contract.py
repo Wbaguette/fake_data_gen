@@ -4,7 +4,7 @@ from player import Player
 
 fake = Faker()
 
-path = "../tables/contract.csv"
+path = "tables/contract.csv"
 
 class Contract:
    def __init__(self, player_id: int, salary: float, start: str, end: str):

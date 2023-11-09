@@ -5,7 +5,7 @@ from team import Team
 
 fake = Faker()
 
-path = "../tables/sponsor.csv"
+path = "tables/sponsor.csv"
 
 class Sponsor:
    def __init__(self, sponsor_id: int, team_id: int, sponsor_name: str, value: float):

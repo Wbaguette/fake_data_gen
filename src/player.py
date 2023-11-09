@@ -4,7 +4,7 @@ from team import Team
 
 fake = Faker()
 
-path = "../tables/player.csv"
+path = "tables/player.csv"
 # The possible positions a player can play in soccer
 player_positions = ["GK", "CB", "LB", "RB", "CDM", "CM", "CAM", "LM", "RM", "LW", "RW", "ST"]
 
@@ -53,4 +53,3 @@ def write_players(players: [Player]):
    with open(path, "w+") as f:
       for player in players:
          f.write(str(player) + "\n")
-

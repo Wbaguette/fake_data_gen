@@ -4,7 +4,7 @@ from player import Player
 
 fake = Faker()
 
-path = "../tables/statistics.csv"
+path = "tables/statistics.csv"
 
 class Statistics:
    def __init__(self, player_id: int, goals: int, blocks: int, yellow_cards: int, red_cards: int):

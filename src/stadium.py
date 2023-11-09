@@ -3,7 +3,7 @@ import random
 
 fake = Faker()
 
-path = "../tables/stadium.csv"
+path = "tables/stadium.csv"
 
 class Stadium:
    def __init__(self, stadium_id: int, stadium_name: str, stadium_capacity: int, stadium_location: str):

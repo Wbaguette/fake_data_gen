@@ -4,7 +4,7 @@ from stadium import Stadium
 
 fake = Faker()
 
-path = "../tables/staff.csv"
+path = "tables/staff.csv"
 
 class Staff:
    def __init__(self, staff_id: int, name: str, salary: float, role: str, stadium_id: int):
