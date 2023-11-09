@@ -2,7 +2,7 @@
 
 Contract generation using player object list\
 Match generation using team object list and stadium list\
-Result generation using match object list\
+Result generation using match object list
 
 # Done 
 
