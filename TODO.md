@@ -14,4 +14,4 @@ Sponsor generation using team object list\
 [ .. Contract]\
 Staff generation using stadium\
 Statistics generation using player object list\
-[ .. Results ]\
+[ .. Results ]
