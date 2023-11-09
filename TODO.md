@@ -2,7 +2,6 @@
 
 
 
-
 .. everything else 😭
 
 
@@ -13,3 +12,5 @@ Team generation
 Player generation using team object list
 Statistics generation using player object list
 Sponsor generation using team object list
+Staff generation using stadium
+
