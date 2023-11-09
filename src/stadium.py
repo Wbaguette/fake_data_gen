@@ -19,15 +19,13 @@ class Stadium:
 def gen_stadiums() -> [Stadium]:
    # Somehow we have 100 stadiums to use
    num_stadiums = 100
-   stadiums = []
    for i in range(num_stadiums):
       stadium_id = i + 1
       stadium_name = (fake.unique.company() + " " + fake.random_element(["Arena", "Stadium", "Field", "Park"])).replace(",", "")
       # Somehow this rounds to the nearest 10th
       stadium_cap = round(random.randint(5000, 950000), -1)
       stadium_loc = fake.unique.city()
-      stadiums.append([stadium_id, stadium_name, stadium_cap, stadium_loc])
-   return [Stadium(*stadium) for stadium in stadiums]
+      yield Stadium(stadium_id, stadium_name, stadium_cap, stadium_loc)
    
 # Write to the csv file
 def write_stadiums(stadiums: [Stadium]):
