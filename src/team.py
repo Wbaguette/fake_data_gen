@@ -28,7 +28,7 @@ def gen_teams() -> [Team]:
    for i in range(num_teams):
       team_id = i + 1
       team_name = fake.unique.city() + " " + fake.random_element(["FC", "United", "City", "Athletic"])
-      team_val = random.randint(50000, 4000000)
+      team_val = round(random.uniform(50000, 5000000), 2)
       team_wins = random.randint(0, games_played)
       team_losses = random.randint(0, games_played - team_wins)
       team_ties = games_played - team_wins - team_losses
