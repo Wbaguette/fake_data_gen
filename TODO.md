@@ -6,7 +6,7 @@ Result generation using match object list
 
 # Done 
 
-Team generation <br>
+Team generation\
 Player generation using team object list
 Stadium generation
 [ .. Match ]
