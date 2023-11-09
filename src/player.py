@@ -32,7 +32,7 @@ def gen_players(teams: [Team]) -> [Player]:
       team_players = []
       for j in range(num_players):
          player_id = int(f"{i+1}{j+1}")
-         player_name = fake.unique.name_male()
+         player_name = fake.name_male()
          player_age = random.randint(18, 35)
          # If we don't already have one player in every position...
          if len(team_players) < len(player_positions):
