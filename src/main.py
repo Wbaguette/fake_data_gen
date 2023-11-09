@@ -26,7 +26,10 @@ def main():
    contracts = contract.gen_contracts(players)
    # for co in contracts: print(co)
    
-   
+   # TODO: some pre calculated thing for winning and losing teams
+   # { home { team_id, goals }, away { team_id, goals }  win/loss/tie }
+   # (winner_id: goals, loser_id: goals)
+   # this will be used to generate matches and used to generate the teams' stats (win loss tie)
    
    
    
