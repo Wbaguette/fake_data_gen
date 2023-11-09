@@ -24,7 +24,7 @@ def main():
    staffs = staff.gen_staff(stadiums)
    # for sta in staffs: print(sta)
    contracts = contract.gen_contracts(players)
-   for co in contracts: print(co)
+   # for co in contracts: print(co)
    
    
    
