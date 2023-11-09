@@ -3,6 +3,7 @@ import stadium
 import player
 import stats
 import sponsor
+import staff
 
 from faker import Faker
 fake = Faker()
@@ -10,19 +11,21 @@ fake = Faker()
 
 def main():
    teams = team.gen_teams()
-   for t in teams: print(t)
+   # for te in teams: print(te)
    stadiums = stadium.gen_stadiums()
-   # for s in stadiums: print(s)
+   # for st in stadiums: print(st)
    players = player.gen_players(teams)
-   # for p in players: print(p)
+   # for pl in players: print(pl)
    statss = stats.gen_statistics(players)
-   # for s in statss: print(s)
+   # for st in statss: print(st)
    sponsors = sponsor.gen_sponsors(teams)
    # for sp in sponsors: print(sp)
+   staffs = staff.gen_staff(stadiums)
+   for sta in staffs: print(sta)
    
-
-
-
-
+   
+   
+   
+   
 if __name__ == "__main__":
    main()
