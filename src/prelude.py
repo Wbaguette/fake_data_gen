@@ -1,14 +1,19 @@
 from enum import Enum
 import random
 
+# Theres probably a better way to structure this but I am too lazy to think of it
+
 class GameRes(Enum):
    WINNER = 1
    TIE = 2
    
 class GameResult:
-   def __init__(self, status: GameRes, winner: int):
+   def __init__(self, status: GameRes, winner: int, loser: int):
       self.status: GameRes = status
+      # team_id of winner
       self.winner: int = winner
+      # team_id of loser
+      self.loser: int = loser
 
 class Prelude:
    def __init__(self, home: [int, int], away: [int, int], result: GameResult):
@@ -42,7 +47,9 @@ def prelude() -> [Prelude]:
          game_2_res = GameRes.TIE if game_2_home_goals == game_2_away_goals else GameRes.WINNER
 
          game_1_winner_id = home_team if game_1_home_goals > game_1_away_goals else away_team if game_1_away_goals > game_1_home_goals else -1
+         game_1_loser_id = home_team if game_1_home_goals < game_1_away_goals else away_team if game_1_away_goals < game_1_home_goals else -1
          game_2_winner_id = home_team if game_2_home_goals > game_2_away_goals else away_team if game_2_away_goals > game_2_home_goals else -1
+         game_2_loser_id = home_team if game_2_home_goals < game_2_away_goals else away_team if game_2_away_goals < game_2_home_goals else -1
 
-         yield Prelude([home_team, game_1_home_goals], [away_team, game_1_away_goals], GameResult(game_1_res, game_1_winner_id))
-         yield Prelude([away_team, game_2_away_goals], [home_team, game_2_home_goals], GameResult(game_2_res, game_2_winner_id))
+         yield Prelude([home_team, game_1_home_goals], [away_team, game_1_away_goals], GameResult(game_1_res, game_1_winner_id, game_1_loser_id))
+         yield Prelude([away_team, game_2_away_goals], [home_team, game_2_home_goals], GameResult(game_2_res, game_2_winner_id, game_2_loser_id))
