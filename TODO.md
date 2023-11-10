@@ -1,16 +1,15 @@
 # TODO
 
-Match generation using team object list and stadium list\
-Result generation using match object list
 
-# Done 
+
+# Tasks Finished
 
 Team generation\
 Player generation using team object list\
 Stadium generation\
-[ .. Match ]\
+Match generation using team object list and stadium list\
 Sponsor generation using team object list\
 Contract generation using player object list\
 Staff generation using stadium\
 Statistics generation using player object list\
-[ .. Results ]
+Result generation using match object list
