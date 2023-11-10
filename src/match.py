@@ -1,7 +1,7 @@
 from faker import Faker
-import random
-from team import Team
 from stadium import Stadium
+from prelude import Prelude
+from datetime import datetime, timedelta
 
 fake = Faker()
 
@@ -19,13 +19,21 @@ class Match:
    def __str__(self):
       return f"{self.match_id},{self.stadium_id},{self.home},{self.away},{self.datetime}"
 
-def gen_matches(teams: [Team], stadiums: [Stadium]) -> [Match]:
-   # Every team plays every other team twice, at a random stadium
-   matches = []
-   # Going to have to keep track of a few things:
-   #  Map 
+def gen_matches(preludes: [Prelude], stadiums: [Stadium]) -> [Match]:
+   ids = 0
    
-
+   current_year = datetime.now().year
+   start_time = datetime(current_year, 1, 1, 14, 0, 0)  
+   end_time = datetime(current_year, 12, 31, 18, 0, 0)  
+   
+   for prelude in preludes:
+      home_team_id = prelude.home[0]
+      away_team_id = prelude.away[0]
+      stadium_id = fake.random_element(stadiums).stadium_id
+      
+      date_time = fake.date_time_between(start_time, end_time).strftime("%Y-%m-%d %H:%M:%S")
+      yield Match(ids := ids + 1, stadium_id, home_team_id, away_team_id, date_time)
+   
 # Write to the csv file
 def write_matches(matches: [Match]):
    with open(path, "w+") as f:
