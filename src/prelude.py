@@ -31,7 +31,7 @@ class Prelude:
       """
       
 def prelude() -> [Prelude]:
-   num_teams = 3
+   num_teams = 32
    for i in range(1, num_teams + 1):
       for j in range(i + 1, num_teams + 1):
          home_team = i

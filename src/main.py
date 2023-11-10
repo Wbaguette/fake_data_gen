@@ -5,33 +5,43 @@ import stats
 import sponsor
 import staff
 import contract
+import prelude
+import match
+import result
 
 from faker import Faker
 fake = Faker()
 
-
+# Everything with a list() cast is because its a generator
 def main():
-   teams = team.gen_teams()
-   # for te in teams: print(te)
-   stadiums = stadium.gen_stadiums()
-   # for st in stadiums: print(st)
+   
+   # Generate a prelude (this is like the glue that makes tables actually correlate and be consistent with data)
+   
+   preludes = list(prelude.prelude())
+   
+   # Generate the stuff
+   
+   teams = team.gen_teams_from_preludes(preludes)
+   stadiums = list(stadium.gen_stadiums())
    players = player.gen_players(teams)
-   # for pl in players: print(pl)
-   statss = stats.gen_statistics(players)
-   # for st in statss: print(st)
+   statss = list(stats.gen_statistics(players))
    sponsors = sponsor.gen_sponsors(teams)
-   # for sp in sponsors: print(sp)
    staffs = staff.gen_staff(stadiums)
-   # for sta in staffs: print(sta)
-   contracts = contract.gen_contracts(players)
-   # for co in contracts: print(co)
+   contracts = list(contract.gen_contracts(players))
+   matches = list(match.gen_matches(preludes, stadiums))
+   results = list(result.gen_results(teams, preludes, matches)) 
    
-   # TODO: some pre calculated thing for winning and losing teams
-   # { home { team_id, goals }, away { team_id, goals }  win/loss/tie }
-   # (winner_id: goals, loser_id: goals)
-   # this will be used to generate matches and used to generate the teams' stats (win loss tie)
+   # Write to CSV for exporting
    
-   
+   team.write_teams(teams)
+   stadium.write_stadiums(stadiums)
+   player.write_players(players)
+   stats.write_statistics(statss)
+   sponsor.write_sponsors(sponsors)
+   staff.write_staff(staffs)
+   contract.write_contracts(contracts)
+   match.write_matches(matches)
+   result.write_results(results)
    
 if __name__ == "__main__":
    main()
