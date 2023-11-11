@@ -1,6 +1,6 @@
 CREATE TABLE `Team` (
   `idTeam` INT NOT NULL,
-  `name`VARCHAR(45) NULL,
+  `name` VARCHAR(45) NULL,
   `wins` INT NULL,
   `losses` INT NULL,
   `ties` INT NULL,

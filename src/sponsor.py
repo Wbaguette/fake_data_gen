@@ -23,6 +23,8 @@ def gen_sponsors(teams: [Team]) -> [Sponsor]:
    # Lets say each team has 4 sponsors
    num_sponsors = 4
    sponsors = [fake.unique.company() for _ in range(ceil(len(teams) / 2))] + ["Nike", "Adidas", "Puma", "Under Armour", "New Balance"]
+   # Replace , with ""
+   sponsors = [sponsor.replace(",", "") for sponsor in sponsors]
    ret_sponsors = []
    for team in teams:
       team_sponsors = random.sample(sponsors, num_sponsors)
