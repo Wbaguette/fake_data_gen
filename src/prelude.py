@@ -1,7 +1,7 @@
 from enum import Enum
 import random
 
-# Theres probably a better way to structure this but I am too lazy to think of it
+# Theres probably a better way to structure this but I am to lazy to think of it
 
 class GameRes(Enum):
    WINNER = 1
