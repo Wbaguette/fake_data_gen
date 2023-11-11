@@ -9,9 +9,6 @@ import prelude
 import match
 import result
 
-from faker import Faker
-fake = Faker()
-
 # Everything with a list() cast is because its a generator
 def main():
    
