@@ -12,20 +12,20 @@
 13,3,Hood and Sons,299656.52
 12,4,Hardin-Smith,691756.8
 14,4,Stevens-Howard,553150.55
-1,4,Mitchell, Oconnor and Benson,785635.35
-6,4,Myers, Coleman and Jones,180118.94
-6,5,Myers, Coleman and Jones,541007.94
+1,4,Mitchell Oconnor and Benson,785635.35
+6,4,Myers Coleman and Jones,180118.94
+6,5,Myers Coleman and Jones,541007.94
 5,5,Allen Inc,770810.07
 13,5,Hood and Sons,181174.74
 9,5,Rodriguez and Sons,989379.94
 12,6,Hardin-Smith,458026.23
-1,6,Mitchell, Oconnor and Benson,870155.39
+1,6,Mitchell Oconnor and Benson,870155.39
 8,6,Travis Group,69701.29
 16,6,Ayers-Smith,809006.18
 10,7,Willis Ltd,737848.43
 9,7,Rodriguez and Sons,233441.06
 16,7,Ayers-Smith,211138.0
-1,7,Mitchell, Oconnor and Benson,161344.02
+1,7,Mitchell Oconnor and Benson,161344.02
 3,8,Steele and Sons,357006.89
 19,8,Puma,374399.37
 20,8,Under Armour,829478.62
@@ -36,14 +36,14 @@
 16,9,Ayers-Smith,846536.55
 19,10,Puma,457437.21
 9,10,Rodriguez and Sons,786340.49
-4,10,Simpson, Gilbert and Cook,977335.37
+4,10,Simpson Gilbert and Cook,977335.37
 11,10,Williams-Byrd,272768.33
 13,11,Hood and Sons,691158.29
 16,11,Ayers-Smith,738722.26
 5,11,Allen Inc,847063.36
 21,11,New Balance,564895.7
-2,12,Vance, Campbell and Allen,578844.63
-4,12,Simpson, Gilbert and Cook,617957.9
+2,12,Vance Campbell and Allen,578844.63
+4,12,Simpson Gilbert and Cook,617957.9
 21,12,New Balance,617785.81
 15,12,Reynolds-Benson,773701.87
 17,13,Nike,842152.71
@@ -52,22 +52,22 @@
 14,13,Stevens-Howard,160169.62
 14,14,Stevens-Howard,272411.74
 19,14,Puma,807655.79
-2,14,Vance, Campbell and Allen,222720.17
+2,14,Vance Campbell and Allen,222720.17
 20,14,Under Armour,157431.1
-6,15,Myers, Coleman and Jones,653044.61
-1,15,Mitchell, Oconnor and Benson,782141.77
+6,15,Myers Coleman and Jones,653044.61
+1,15,Mitchell Oconnor and Benson,782141.77
 10,15,Willis Ltd,379305.73
 13,15,Hood and Sons,556732.74
 8,16,Travis Group,104895.44
-6,16,Myers, Coleman and Jones,527333.0
+6,16,Myers Coleman and Jones,527333.0
 7,16,May PLC,393239.79
-2,16,Vance, Campbell and Allen,312101.59
+2,16,Vance Campbell and Allen,312101.59
 21,17,New Balance,684877.0
 17,17,Nike,377336.59
 12,17,Hardin-Smith,390612.26
 19,17,Puma,466237.46
 7,18,May PLC,331480.96
-6,18,Myers, Coleman and Jones,486568.39
+6,18,Myers Coleman and Jones,486568.39
 20,18,Under Armour,545263.73
 15,18,Reynolds-Benson,226571.94
 9,19,Rodriguez and Sons,651933.93
@@ -75,7 +75,7 @@
 18,19,Adidas,835048.0
 10,19,Willis Ltd,175344.62
 18,20,Adidas,758057.26
-2,20,Vance, Campbell and Allen,416881.57
+2,20,Vance Campbell and Allen,416881.57
 20,20,Under Armour,313389.46
 11,20,Williams-Byrd,163539.03
 13,21,Hood and Sons,676603.43
@@ -84,9 +84,9 @@
 20,21,Under Armour,620368.83
 20,22,Under Armour,728704.96
 13,22,Hood and Sons,392417.96
-6,22,Myers, Coleman and Jones,82501.94
+6,22,Myers Coleman and Jones,82501.94
 17,22,Nike,99848.39
-1,23,Mitchell, Oconnor and Benson,644522.17
+1,23,Mitchell Oconnor and Benson,644522.17
 13,23,Hood and Sons,882047.31
 21,23,New Balance,536036.76
 19,23,Puma,529349.97
@@ -96,33 +96,33 @@
 21,24,New Balance,527990.74
 19,25,Puma,909636.98
 13,25,Hood and Sons,460300.56
-1,25,Mitchell, Oconnor and Benson,450355.55
-4,25,Simpson, Gilbert and Cook,521772.5
+1,25,Mitchell Oconnor and Benson,450355.55
+4,25,Simpson Gilbert and Cook,521772.5
 7,26,May PLC,271423.08
 14,26,Stevens-Howard,324191.4
 16,26,Ayers-Smith,716448.0
-4,26,Simpson, Gilbert and Cook,730648.19
+4,26,Simpson Gilbert and Cook,730648.19
 11,27,Williams-Byrd,234055.76
-6,27,Myers, Coleman and Jones,624155.74
+6,27,Myers Coleman and Jones,624155.74
 16,27,Ayers-Smith,455016.37
 19,27,Puma,882503.26
 8,28,Travis Group,987849.47
 11,28,Williams-Byrd,706074.85
 14,28,Stevens-Howard,747184.54
-1,28,Mitchell, Oconnor and Benson,971896.71
-2,29,Vance, Campbell and Allen,805308.06
+1,28,Mitchell Oconnor and Benson,971896.71
+2,29,Vance Campbell and Allen,805308.06
 13,29,Hood and Sons,762340.82
 11,29,Williams-Byrd,145446.74
 15,29,Reynolds-Benson,285453.6
-4,30,Simpson, Gilbert and Cook,104988.94
+4,30,Simpson Gilbert and Cook,104988.94
 13,30,Hood and Sons,801239.63
 20,30,Under Armour,775255.68
 16,30,Ayers-Smith,956296.11
-4,31,Simpson, Gilbert and Cook,636840.64
+4,31,Simpson Gilbert and Cook,636840.64
 19,31,Puma,739077.69
 3,31,Steele and Sons,411596.61
 15,31,Reynolds-Benson,859190.23
-4,32,Simpson, Gilbert and Cook,442876.68
+4,32,Simpson Gilbert and Cook,442876.68
 10,32,Willis Ltd,241769.93
 17,32,Nike,675447.51
 21,32,New Balance,397544.34
